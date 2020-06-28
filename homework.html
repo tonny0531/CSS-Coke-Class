@@ -7,43 +7,73 @@
     <title>Document</title>
     <link rel="stylesheet" href="reset.css">
     <style>
+        .box{
+            width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .cc {
+            clear: both;
+        }
+        section ~ section{
+            margin-top:15px;
+            margin-bottom:15px;
+        }
+        /*#region ad*/
+        .ad-message{
+            text-decoration: none;
+            color: black;
+        }
         .ad{
-            background-color: #aaa;
-            padding: 8px 0px;
+            padding: 15px;
+            width: calc(100%-15px);
+            background: #cccccc;
+            font-size: 12px;
         }
 
         .ad a {
             font-size: 12px;
             line-height: 18px;
             float: left;
-            margin-left: 5px;
-            background-color: #fff;
+            text-decoration: none;
         }
-        .ad ul li a{
+        .ad ul {
             float: right;
-            background-color: #faf;
         }
-        .ad ul li a ~ a{
-            margin-left: 5px;
+
+        .ad ul li {
+            display: inline-block;
         }
-        .cc {
-            clear: both;
+
+        .ad ul li a{
+            text-decoration: none;
+            color: black;
         }
+
+        .ad ul li ~ li{
+            margin-left: 30px;
+        }
+        /*#endregion ad*/
+
     </style>
 </head>
 
 <body>
-    <div class="ad bg-gray">
-        <a href="#">1st Time Buyer? Use "ONE" Promocode To Instantly Get 10% OFF!</a>
-        <ul>
-            <li><a href="#">Contact</a></li>
-            <li><a href="#">Sitemap</a></li>
-            <li><a href="#">Support</a></li>
-        </ul>
-        <div class="cc"></div>
-    </div>
-    <header>
-        <a href="#"><img src="https://picsum.photos/199/63/?random=1"></a>
+    <section class="ad">
+        <nav class="box">
+            <a href="#" class="ad-message">1st Time Buyer? Use "ONE" Promocode To Instantly Get 10% OFF!</a>
+            <ul>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Sitemap</a></li>
+                <li><a href="#">Support</a></li>
+            </ul>
+            <div class="cc"></div>
+        </nav>
+    </section>
+    <!-- -------------------------------------------------------------------------------------------- -->
+    <section>
+    <nav class="box">
+        <a href="#"><img src="img/asset 0.jpeg"></a>
         <a href="#">Structural</a>
         <a href="#">Refractory</a>
         <a href="#">Electrical</a>
@@ -54,7 +84,9 @@
         <a href="#">Profile</a>
         <a href="#">Shopping Cart</a>
         <span>0</span>
-    </header>
+    </nav>
+    </section>
+    <!-- -------------------------------------------------------------------------------------------- -->
     <section>
         <a href="#">
             <img src="https://picsum.photos/842/547/?random=1">
